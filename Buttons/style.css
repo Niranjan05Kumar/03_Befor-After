@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.378);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(255, 179, 1) ;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 200ms linear;
+}
+
+/* For btn 1 */
+.btn1:hover{
+    border-color: black;
+    color: black;
+}
+.btn1::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    transform: translateX(-95%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn1:hover::before{
+    transform: translateX(0);
+}
+
+/* For btn 2 */
+.btn2:hover{
+    border-color: black;
+    color: black;
+}
+.btn2::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    transform: translateX(-95%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn2:hover::before{
+    transform: translateX(-50%);
+}
+.btn2::after{
+    content: " ";
+    width:100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(95%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn2:hover::after{
+    transform: translateX(50%);
+}
+
+/* For btn 3 */
+.btn3:hover{
+    border-color: black;
+    color: black;
+}
+.btn3::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 110, 255);
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn3:hover::before{
+    transform: translateX(-100%);
+}
+.btn3::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 110, 255);
+    transform: translateX(50%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn3:hover::after{
+    transform: translateX(100%);
+}
+
+/* For btn 4 */
+.btn4:hover{
+    border-color: black;
+    color: black;
+}
+.btn4::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 110, 255);
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn4:hover::before{
+    transform: translateY(-100%);
+}
+.btn4::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 110, 255);
+    transform: translateY(50%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn4:hover::after{
+    transform: translateY(100%);
+}
+
+/* For btn 5 */
+.btn5:hover{
+    border-color: black;
+    color: black;
+}
+.btn5::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 110, 255);
+    transform: translateX(-95%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn5:hover::before{
+    transform: translateX(0) rotate(180deg);
+}
+.btn5::after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 110, 255);
+    transform: translateX(95%);
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn5:hover::after{
+    transform: translateX(0) rotate(-180deg);
+}
+
+/* For btn 6 */
+.btn6:hover{
+    border-color: black;
+    color: black;
+}
+.btn6::before{
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -110px;
+    left: -30px;
+    background-color: rgb(0, 110, 255);
+    transform: scale(0);
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 200ms linear;
+}
+.btn6:hover::before{
+    transform: scale(100%);
+}
